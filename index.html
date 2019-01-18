@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <title>Bingo TV</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="icofont/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
+    <!-- JS -->
+    <script type="text/javascript" src="js/system.js"></script>
+
+</head>
+
+
+<body onload="loaded()">
+    <!-- footer start -->
+    <footer class="navbar">
+        <div class="item waves-effect active" data-href="index.html">
+            <i class="icon-home"></i>
+            <p>首页</p>
+        </div>
+        <div class="item waves-effect @@nav-3" data-href="user.html">
+            <i class="icon-user"></i>
+            <p>我</p>
+        </div>
+    </footer>
+
+    <!-- footer over -->
+    <!-- main start -->
+    <div class="main nprogress-fade nprogress-out">
+        <div class="scroller">
+            <!-- slideshow start -->
+            <div class="swiper-container image-slide" id="image-slide">
+                <div class="swiper-wrapper">
+                    <!-- 最多5组 -->
+                    <!-- group start -->
+                    <div class="swiper-slide">
+                        <img class="swiper-lazy" data-src="http://placehold.it/375x175">
+                        <div class="swiper-info">
+                            <p>文字信息文字信息文字信息文字信息文字信息文字信息文字信息文字信息</p>
+                        </div>
+                        <div class="swiper-lazy-preloader"></div>
+                    </div>
+                    <!-- group over -->
+                    <!-- group start -->
+                    <div class="swiper-slide">
+                        <img class="swiper-lazy" data-src="http://placehold.it/375x175">
+                        <div class="swiper-info">
+                            <p>文字信息</p>
+                        </div>
+                        <div class="swiper-lazy-preloader"></div>
+                    </div>
+                    <!-- group over -->
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+            <!-- slideshow over -->
+            <!-- classification start -->
+            <div class="classification">
+                <a data-href="list.html" class="classification-item">
+                    <img src="img/classification-1.png">
+                    <p>直播</p>
+                </a>
+                <a data-href="list.html" class="classification-item">
+                    <img src="img/classification-2.png">
+                    <p>点播</p>
+                </a>
+                <a data-href="list.html" class="classification-item">
+                    <img src="img/classification-3.png">
+                    <p>电影</p>
+                </a>
+                <a data-href="list.html" class="classification-item">
+                    <img src="img/classification-4.png">
+                    <p>电视剧</p>
+                </a>
+                <a data-href="list.html" class="classification-item">
+                    <img src="img/classification-5.png">
+                    <p>综艺</p>
+                </a>
+                <a data-href="list.html" class="classification-item">
+                    <img src="img/classification-6.png">
+                    <p>动漫</p>
+                </a>
+                <a data-href="list.html" class="classification-item">
+                    <img src="img/classification-7.png">
+                    <p>纪录片</p>
+                </a>
+            </div>
+            <!-- classification over -->
+            <!-- group start -->
+            <div class="group-index-video">
+                <div class="group-index-video-title hairline">
+                    <img class="icon" src="img/title-icon.png">
+                    <h4>直播</h4>
+                </div>
+                <!-- list start -->
+                <div class="list-video">
+                    <!-- 封面标准尺寸372*210px -->
+                    <!-- item start -->
+                    <a data-href="video.html" class="list-video-item">
+                        <div class="list-video-cover">
+                            <img class="cover-background" src="img/cover-background.png">
+                            <div class="cover-image" style="background-image:url('http://placehold.it/372x210')"></div>
+                        </div>
+                        <div class="list-video-info">
+                            <p class="list-video-title">视频标题视频标题视频标题视频标题视频标题视频标题</p>
+                        </div>
+                    </a>
+                    <!-- item over -->
+                    <!-- item start -->
+                    <a data-href="video.html" class="list-video-item">
+                        <div class="list-video-cover">
+                            <img class="cover-background" src="img/cover-background.png">
+                            <div class="cover-image" style="background-image:url('http://placehold.it/210x372')"></div>
+                        </div>
+                        <div class="list-video-info">
+                            <p class="list-video-title">视频标题</p>
+                        </div>
+                    </a>
+                    <!-- item over -->
+                    <!-- item start -->
+                    <a data-href="video.html" class="list-video-item">
+                        <div class="list-video-cover">
+                            <img class="cover-background" src="img/cover-background.png">
+                            <div class="cover-image" style="background-image:url('http://placehold.it/372x372')"></div>
+                        </div>
+                        <div class="list-video-info">
+                            <p class="list-video-title">视频标题</p>
+                        </div>
+                    </a>
+                    <!-- item over -->
+                    <!-- item start -->
+                    <a data-href="video.html" class="list-video-item">
+                        <div class="list-video-cover">
+                            <img class="cover-background" src="img/cover-background.png">
+                            <div class="cover-image" style="background-image:url('http://placehold.it/372x372')"></div>
+                        </div>
+                        <div class="list-video-info">
+                            <p class="list-video-title">视频标题</p>
+                        </div>
+                    </a>
+                    <!-- item over -->
+                </div>
+                <!-- list over -->
+                <div class="button-group">
+                    <a data-href="list.html" class="button button-block waves-effect">
+                        <span class="button-inner">更多</span>
+                    </a>
+                </div>
+            </div>
+            <!-- group over -->
+            <!-- group start -->
+            <div class="group-index-video">
+                <div class="group-index-video-title hairline">
+                    <img class="icon" src="img/title-icon.png">
+                    <h4>电影</h4>
+                </div>
+                <!-- list start -->
+                <div class="list-video">
+                    <!-- 封面标准尺寸372*210px -->
+                    <!-- item start -->
+                    <a data-href="video.html" class="list-video-item">
+                        <div class="list-video-cover">
+                            <img class="cover-background" src="img/cover-background.png">
+                            <div class="cover-image" style="background-image:url('http://placehold.it/372x210')"></div>
+                        </div>
+                        <div class="list-video-info">
+                            <p class="list-video-title">视频标题视频标题视频标题视频标题视频标题视频标题</p>
+                            <p class="list-video-introduce">视频简介视频简介视频简介视频简介视频简介视频简介</p>
+                        </div>
+                    </a>
+                    <!-- item over -->
+                    <!-- item start -->
+                    <a data-href="video.html" class="list-video-item">
+                        <div class="list-video-cover">
+                            <img class="cover-background" src="img/cover-background.png">
+                            <div class="cover-image" style="background-image:url('http://placehold.it/210x372')"></div>
+                        </div>
+                        <div class="list-video-info">
+                            <p class="list-video-title">视频标题</p>
+                            <p class="list-video-introduce">视频简介</p>
+                        </div>
+                    </a>
+                    <!-- item over -->
+                    <!-- item start -->
+                    <a data-href="video.html" class="list-video-item">
+                        <div class="list-video-cover">
+                            <img class="cover-background" src="img/cover-background.png">
+                            <div class="cover-image" style="background-image:url('http://placehold.it/372x372')"></div>
+                        </div>
+                        <div class="list-video-info">
+                            <p class="list-video-title">视频标题</p>
+                            <p class="list-video-introduce">视频简介</p>
+                        </div>
+                    </a>
+                    <!-- item over -->
+                    <!-- item start -->
+                    <a data-href="video.html" class="list-video-item">
+                        <div class="list-video-cover">
+                            <img class="cover-background" src="img/cover-background.png">
+                            <div class="cover-image" style="background-image:url('http://placehold.it/372x372')"></div>
+                        </div>
+                        <div class="list-video-info">
+                            <p class="list-video-title">视频标题</p>
+                            <p class="list-video-introduce">视频简介</p>
+                        </div>
+                    </a>
+                    <!-- item over -->
+                </div>
+                <!-- list over -->
+                <div class="button-group">
+                    <a data-href="list.html" class="button button-block waves-effect">
+                        <span class="button-inner">更多</span>
+                    </a>
+                </div>
+            </div>
+            <!-- group over -->
+            <!-- group start -->
+            <div class="group-index-video">
+                <div class="group-index-video-title hairline">
+                    <img class="icon" src="img/title-icon.png">
+                    <h4>电视剧</h4>
+                </div>
+                <!-- list start -->
+                <div class="list-video">
+                    <!-- 封面标准尺寸372*210px -->
+                    <!-- item start -->
+                    <a data-href="video.html" class="list-video-item">
+                        <div class="list-video-cover">
+                            <img class="cover-background" src="img/cover-background.png">
+                            <div class="cover-image" style="background-image:url('http://placehold.it/372x210')"></div>
+                        </div>
+                        <div class="list-video-info">
+                            <p class="list-video-title">视频标题视频标题视频标题视频标题视频标题视频标题</p>
+                            <p class="list-video-introduce">视频简介视频简介视频简介视频简介视频简介视频简介</p>
+                        </div>
+                    </a>
+                    <!-- item over -->
+                    <!-- item start -->
+                    <a data-href="video.html" class="list-video-item">
+                        <div class="list-video-cover">
+                            <img class="cover-background" src="img/cover-background.png">
+                            <div class="cover-image" style="background-image:url('http://placehold.it/210x372')"></div>
+                        </div>
+                        <div class="list-video-info">
+                            <p class="list-video-title">视频标题</p>
+                            <p class="list-video-introduce">视频简介</p>
+                        </div>
+                    </a>
+                    <!-- item over -->
+                    <!-- item start -->
+                    <a data-href="video.html" class="list-video-item">
+                        <div class="list-video-cover">
+                            <img class="cover-background" src="img/cover-background.png">
+                            <div class="cover-image" style="background-image:url('http://placehold.it/372x372')"></div>
+                        </div>
+                        <div class="list-video-info">
+                            <p class="list-video-title">视频标题</p>
+                            <p class="list-video-introduce">视频简介</p>
+                        </div>
+                    </a>
+                    <!-- item over -->
+                    <!-- item start -->
+                    <a data-href="video.html" class="list-video-item">
+                        <div class="list-video-cover">
+                            <img class="cover-background" src="img/cover-background.png">
+                            <div class="cover-image" style="background-image:url('http://placehold.it/372x372')"></div>
+                        </div>
+                        <div class="list-video-info">
+                            <p class="list-video-title">视频标题</p>
+                            <p class="list-video-introduce">视频简介</p>
+                        </div>
+                    </a>
+                    <!-- item over -->
+                </div>
+                <!-- list over -->
+                <div class="button-group">
+                    <a data-href="list.html" class="button button-block waves-effect">
+                        <span class="button-inner">更多</span>
+                    </a>
+                </div>
+            </div>
+            <!-- group over -->
+            <!-- group start -->
+            <div class="group-index-video">
+                <div class="group-index-video-title hairline">
+                    <img class="icon" src="img/title-icon.png">
+                    <h4>综艺</h4>
+                </div>
+                <!-- list start -->
+                <div class="list-video">
+                    <!-- 封面标准尺寸372*210px -->
+                    <!-- item start -->
+                    <a data-href="video.html" class="list-video-item">
+                        <div class="list-video-cover">
+                            <img class="cover-background" src="img/cover-background.png">
+                            <div class="cover-image" style="background-image:url('http://placehold.it/372x210')"></div>
+                        </div>
+                        <div class="list-video-info">
+                            <p class="list-video-title">视频标题视频标题视频标题视频标题视频标题视频标题</p>
+                            <p class="list-video-introduce">视频简介视频简介视频简介视频简介视频简介视频简介</p>
+                        </div>
+                    </a>
+                    <!-- item over -->
+                    <!-- item start -->
+                    <a data-href="video.html" class="list-video-item">
+                        <div class="list-video-cover">
+                            <img class="cover-background" src="img/cover-background.png">
+                            <div class="cover-image" style="background-image:url('http://placehold.it/210x372')"></div>
+                        </div>
+                        <div class="list-video-info">
+                            <p class="list-video-title">视频标题</p>
+                            <p class="list-video-introduce">视频简介</p>
+                        </div>
+                    </a>
+                    <!-- item over -->
+                    <!-- item start -->
+                    <a data-href="video.html" class="list-video-item">
+                        <div class="list-video-cover">
+                            <img class="cover-background" src="img/cover-background.png">
+                            <div class="cover-image" style="background-image:url('http://placehold.it/372x372')"></div>
+                        </div>
+                        <div class="list-video-info">
+                            <p class="list-video-title">视频标题</p>
+                            <p class="list-video-introduce">视频简介</p>
+                        </div>
+                    </a>
+                    <!-- item over -->
+                    <!-- item start -->
+                    <a data-href="video.html" class="list-video-item">
+                        <div class="list-video-cover">
+                            <img class="cover-background" src="img/cover-background.png">
+                            <div class="cover-image" style="background-image:url('http://placehold.it/372x372')"></div>
+                        </div>
+                        <div class="list-video-info">
+                            <p class="list-video-title">视频标题</p>
+                            <p class="list-video-introduce">视频简介</p>
+                        </div>
+                    </a>
+                    <!-- item over -->
+                </div>
+                <!-- list over -->
+                <div class="button-group">
+                    <a data-href="list.html" class="button button-block waves-effect">
+                        <span class="button-inner">更多</span>
+                    </a>
+                </div>
+            </div>
+            <!-- group over -->
+            <!-- group start -->
+            <div class="group-index-video">
+                <div class="group-index-video-title hairline">
+                    <img class="icon" src="img/title-icon.png">
+                    <h4>动漫</h4>
+                </div>
+                <!-- list start -->
+                <div class="list-video">
+                    <!-- 封面标准尺寸372*210px -->
+                    <!-- item start -->
+                    <a data-href="video.html" class="list-video-item">
+                        <div class="list-video-cover">
+                            <img class="cover-background" src="img/cover-background.png">
+                            <div class="cover-image" style="background-image:url('http://placehold.it/372x210')"></div>
+                        </div>
+                        <div class="list-video-info">
+                            <p class="list-video-title">视频标题视频标题视频标题视频标题视频标题视频标题</p>
+                            <p class="list-video-introduce">视频简介视频简介视频简介视频简介视频简介视频简介</p>
+                        </div>
+                    </a>
+                    <!-- item over -->
+                    <!-- item start -->
+                    <a data-href="video.html" class="list-video-item">
+                        <div class="list-video-cover">
+                            <img class="cover-background" src="img/cover-background.png">
+                            <div class="cover-image" style="background-image:url('http://placehold.it/210x372')"></div>
+                        </div>
+                        <div class="list-video-info">
+                            <p class="list-video-title">视频标题</p>
+                            <p class="list-video-introduce">视频简介</p>
+                        </div>
+                    </a>
+                    <!-- item over -->
+                    <!-- item start -->
+                    <a data-href="video.html" class="list-video-item">
+                        <div class="list-video-cover">
+                            <img class="cover-background" src="img/cover-background.png">
+                            <div class="cover-image" style="background-image:url('http://placehold.it/372x372')"></div>
+                        </div>
+                        <div class="list-video-info">
+                            <p class="list-video-title">视频标题</p>
+                            <p class="list-video-introduce">视频简介</p>
+                        </div>
+                    </a>
+                    <!-- item over -->
+                    <!-- item start -->
+                    <a data-href="video.html" class="list-video-item">
+                        <div class="list-video-cover">
+                            <img class="cover-background" src="img/cover-background.png">
+                            <div class="cover-image" style="background-image:url('http://placehold.it/372x372')"></div>
+                        </div>
+                        <div class="list-video-info">
+                            <p class="list-video-title">视频标题</p>
+                            <p class="list-video-introduce">视频简介</p>
+                        </div>
+                    </a>
+                    <!-- item over -->
+                </div>
+                <!-- list over -->
+                <div class="button-group">
+                    <a data-href="list.html" class="button button-block waves-effect">
+                        <span class="button-inner">更多</span>
+                    </a>
+                </div>
+            </div>
+            <!-- group over -->
+            <!-- group start -->
+            <div class="group-index-video">
+                <div class="group-index-video-title hairline">
+                    <img class="icon" src="img/title-icon.png">
+                    <h4>纪录片</h4>
+                </div>
+                <!-- list start -->
+                <div class="list-video">
+                    <!-- 封面标准尺寸372*210px -->
+                    <!-- item start -->
+                    <a data-href="video.html" class="list-video-item">
+                        <div class="list-video-cover">
+                            <img class="cover-background" src="img/cover-background.png">
+                            <div class="cover-image" style="background-image:url('http://placehold.it/372x210')"></div>
+                        </div>
+                        <div class="list-video-info">
+                            <p class="list-video-title">视频标题视频标题视频标题视频标题视频标题视频标题</p>
+                            <p class="list-video-introduce">视频简介视频简介视频简介视频简介视频简介视频简介</p>
+                        </div>
+                    </a>
+                    <!-- item over -->
+                    <!-- item start -->
+                    <a data-href="video.html" class="list-video-item">
+                        <div class="list-video-cover">
+                            <img class="cover-background" src="img/cover-background.png">
+                            <div class="cover-image" style="background-image:url('http://placehold.it/210x372')"></div>
+                        </div>
+                        <div class="list-video-info">
+                            <p class="list-video-title">视频标题</p>
+                            <p class="list-video-introduce">视频简介</p>
+                        </div>
+                    </a>
+                    <!-- item over -->
+                    <!-- item start -->
+                    <a data-href="video.html" class="list-video-item">
+                        <div class="list-video-cover">
+                            <img class="cover-background" src="img/cover-background.png">
+                            <div class="cover-image" style="background-image:url('http://placehold.it/372x372')"></div>
+                        </div>
+                        <div class="list-video-info">
+                            <p class="list-video-title">视频标题</p>
+                            <p class="list-video-introduce">视频简介</p>
+                        </div>
+                    </a>
+                    <!-- item over -->
+                    <!-- item start -->
+                    <a data-href="video.html" class="list-video-item">
+                        <div class="list-video-cover">
+                            <img class="cover-background" src="img/cover-background.png">
+                            <div class="cover-image" style="background-image:url('http://placehold.it/372x372')"></div>
+                        </div>
+                        <div class="list-video-info">
+                            <p class="list-video-title">视频标题</p>
+                            <p class="list-video-introduce">视频简介</p>
+                        </div>
+                    </a>
+                    <!-- item over -->
+                </div>
+                <!-- list over -->
+                <div class="button-group">
+                    <a data-href="list.html" class="button button-block waves-effect">
+                        <span class="button-inner">更多</span>
+                    </a>
+                </div>
+            </div>
+            <!-- group over -->
+            <div class="logo-bottom hairline">
+                <img src="img/logo-bottom.png">
+            </div>
+        </div>
+    </div>
+    <!-- main over -->
+
+    <!-- JavaScript start -->
+    <script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript" src="js/nprogress/nprogress.js"></script>
+    <script type="text/javascript" src="js/iscroll/iscroll-probe.js"></script>
+    <script type="text/javascript" src="js/swiper/swiper.min.js"></script>
+    <script type="text/javascript" src="js/waves/waves.min.js"></script>
+    <script type="text/javascript" src="js/scripts.js"></script>
+    <!-- JavaScript over -->
+
+    <script type="text/javascript">
+        // nprogress
+        NProgress.start();
+
+        function loaded() {
+
+            NProgress.done();
+            $('.nprogress-fade').removeClass('nprogress-out');
+
+            mainScroll = new IScroll('.main', {
+                scrollbars: 'custom',
+                fadeScrollbars: true,
+                shrinkScrollbars: 'scale',
+                preventDefaultException: {
+                    tagName: /^(INPUT|TEXTAREA|BUTTON|SELECT|IMG)$/
+                },
+                probeType: 2,
+                tap: true
+            });
+
+        }
+    </script>
+
+</body>
+
+</html>
