@@ -28,7 +28,8 @@ function loaded() {
         shrinkScrollbars: 'scale',
         preventDefaultException: {tagName: /^(INPUT|TEXTAREA|BUTTON|SELECT|IMG)$/ },
         probeType: 2,
-        tap: true
+        tap: true,
+        click: true
     });
 
 }

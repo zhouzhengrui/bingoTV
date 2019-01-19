@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <title>Demo</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="icofont/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
+    <!-- JS -->
+    <script type="text/javascript" src="js/system.js"></script>
+
+</head>
+
+
+<body onload="loaded()">
+    <!-- main start -->
+    <div class="main">
+        <div class="scroller">
+            <!-- button start -->
+            <div class="button-group button-group-column">
+                <button class="button button-block waves-effect waves-dark md-trigger" data-modal="modal-1">
+                    <span class="button-inner">弹出框-中部</span>
+                </button>
+                <button class="button button-block waves-effect waves-dark md-trigger" data-modal="modal-2">
+                    <span class="button-inner">弹出框-底部</span>
+                </button>
+                <button  class="button button-block waves-effect" id="toast-1">
+                    <span class="button-inner">Toast-中部</span>
+                </button>
+                <button  class="button button-block waves-effect" id="toast-2">
+                    <span class="button-inner">Toast-顶部</span>
+                </button>
+                <button  class="button button-block waves-effect" id="toast-3">
+                    <span class="button-inner">Toast-底部</span>
+                </button>
+            </div>
+            <!-- button over -->
+        </div>
+    </div>
+    <!-- main over -->
+
+    <!-- modal start -->
+    <div class="md-modal md-effect-fade" id="modal-1">
+        <div class="md-main">
+            <!-- content start -->
+            <div class="modal-title hairline">
+                <h4 class="title">中部弹出框</h4>
+                <button class="md-close"><i class="icon-cancel"></i></button>
+            </div>
+            <div class="modal-content">
+                <div class="modal-content-inner">
+                    <p>内容区域</p>
+                </div>
+            </div>
+            <div class="modal-button-group hairline">
+                <a data-href="#" class="button button-block waves-effect waves-dark">
+                    <span class="button-inner">按钮</span>
+                </a>
+            </div>
+            <!-- content over -->
+        </div>
+    </div>
+
+    <div class="md-modal md-effect-stick-bottom" id="modal-2">
+        <div class="md-main">
+            <!-- content start -->
+            <div class="modal-title hairline">
+                <h4 class="title">底部弹出框</h4>
+                <button class="md-close"><i class="icon-cancel"></i></button>
+            </div>
+            <div class="modal-content">
+                <div class="modal-content-inner">
+                    <p>内容区域</p>
+                </div>
+            </div>
+            <div class="modal-button-group hairline">
+                <a data-href="#" class="button button-block waves-effect waves-dark">
+                    <span class="button-inner">按钮</span>
+                </a>
+            </div>
+            <!-- content over -->
+        </div>
+    </div>
+
+    <div class="md-overlay"></div> <!-- 必须，背景半透明遮盖 -->
+    <!-- modal over -->
+
+    <!-- JavaScript start -->
+    <script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript" src="js/nprogress/nprogress.js"></script>
+    <script type="text/javascript" src="js/iscroll/iscroll-probe.js"></script>
+    <script type="text/javascript" src="js/swiper/swiper.min.js"></script>
+    <script type="text/javascript" src="js/waves/waves.min.js"></script>
+    <script type="text/javascript" src="js/modalEffects/classie.js"></script>
+    <script type="text/javascript" src="js/modalEffects/modalEffects.js"></script>
+    <script type="text/javascript" src="js/scripts.js"></script>
+    <!-- JavaScript over -->
+
+    <script type="text/javascript">
+        $('#toast-1').on('tap', function() {
+            toast('提示信息', 3000, 'center', 'center');
+        });
+        $('#toast-2').on('tap', function() {
+            toast('提示信息', 3000, 'top', 'center');
+        });
+        $('#toast-3').on('tap', function() {
+            toast('提示信息', 3000, 'bottom', 'center');
+        });
+    </script>
+
+</body>
+
+</html>

@@ -23,7 +23,7 @@
         <div class="scroller">
             <!-- video start -->
             <div class="video-player">
-                <video controls autoplay webkit-playsinline="true" width="100%" height="100%" poster="img/logo-video.png">
+                <video id="video" controls autoplay webkit-playsinline="true" width="100%" height="100%" poster="img/logo-video.png">
                     <source type="video/mp4" src="img/test.mp4">
                 </video>
             </div>
@@ -93,11 +93,21 @@
     <script type="text/javascript" src="js/iscroll/iscroll-probe.js"></script>
     <script type="text/javascript" src="js/swiper/swiper.min.js"></script>
     <script type="text/javascript" src="js/waves/waves.min.js"></script>
+    <script type="text/javascript" src="js/modalEffects/classie.js"></script>
+    <script type="text/javascript" src="js/modalEffects/modalEffects.js"></script>
     <script type="text/javascript" src="js/scripts.js"></script>
     <!-- JavaScript over -->
 
     <script type="text/javascript">
-
+        // 点击播放器区域播放视频
+        var video = document.getElementById("video");
+        video.onclick = function() {
+            if (video.paused) {
+                video.play();
+            } else {
+                video.pause();
+            }
+        }
     </script>
 
 </body>

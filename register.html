@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <title>Bingo TV</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="icofont/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
+    <!-- JS -->
+    <script type="text/javascript" src="js/system.js"></script>
+
+</head>
+
+
+<body onload="loaded()">
+    <!-- main start -->
+    <div class="main">
+        <div class="scroller">
+            <!-- form start -->
+            <form class="form-box">
+                <div class="form-heading">
+                    <h1 class="title">注册<small>Register</small></h1>
+                </div>
+                <!-- group start -->
+                <div class="input-group-haruki input-group-error">
+                    <input class="input-field" type="tel" id="input-1" />
+                    <label class="input-label" for="input-1">
+						<span class="input-label-content">手机号码</span>
+					</label>
+                </div>
+                <!-- group over -->
+                <!-- group start -->
+                <div class="input-group-haruki">
+                    <input class="input-field" type="text" id="input-2" />
+                    <label class="input-label" for="input-2">
+						<span class="input-label-content">姓名</span>
+					</label>
+                </div>
+                <!-- group over -->
+                <!-- group start -->
+                <div class="input-group-haruki">
+                    <input class="input-field" type="email" id="input-3" />
+                    <label class="input-label" for="input-3">
+						<span class="input-label-content">电子邮箱</span>
+					</label>
+                </div>
+                <!-- group over -->
+                <!-- group start -->
+                <div class="input-group-haruki">
+                    <input class="input-field" type="password" id="input-4" />
+                    <label class="input-label" for="input-4">
+						<span class="input-label-content">密码</span>
+					</label>
+                </div>
+                <!-- group over -->
+                <!-- group start -->
+                <div class="input-group-haruki">
+                    <input class="input-field" type="password" id="input-5" />
+                    <label class="input-label" for="input-5">
+						<span class="input-label-content">确认密码</span>
+					</label>
+                </div>
+                <!-- group over -->
+                <!-- prompt start -->
+                <div class="login-form-prompt" style="display:;">
+                    <p class="red">手机号码错误，请重新输入</p>
+                </div>
+                <!-- prompt over -->
+                <!-- button start -->
+                <div class="button-group button-group-column">
+                    <a data-href="#" class="button button-block waves-effect waves-dark">
+                        <span class="button-inner"><b>提交</b></span>
+                    </a>
+                </div>
+                <!-- button over -->
+            </form>
+            <!-- form over -->
+        </div>
+    </div>
+    <!-- main over -->
+
+    <!-- JavaScript start -->
+    <script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript" src="js/nprogress/nprogress.js"></script>
+    <script type="text/javascript" src="js/iscroll/iscroll-probe.js"></script>
+    <script type="text/javascript" src="js/swiper/swiper.min.js"></script>
+    <script type="text/javascript" src="js/waves/waves.min.js"></script>
+    <script type="text/javascript" src="js/modalEffects/classie.js"></script>
+    <script type="text/javascript" src="js/modalEffects/modalEffects.js"></script>
+    <script type="text/javascript" src="js/scripts.js"></script>
+    <!-- JavaScript over -->
+
+    <script type="text/javascript">
+        (function() {
+			[].slice.call( document.querySelectorAll( 'input.input-field' ) ).forEach( function( inputEl ) {
+				if( inputEl.value.trim() !== '' ) {
+					classie.add( inputEl.parentNode, 'input-filled-parent' );
+				}
+				inputEl.addEventListener( 'focus', onInputFocus );
+				inputEl.addEventListener( 'blur', onInputBlur );
+			} );
+			function onInputFocus( ev ) {
+				classie.add( ev.target.parentNode, 'input-filled-parent' );
+			}
+			function onInputBlur( ev ) {
+				if( ev.target.value.trim() === '' ) {
+					classie.remove( ev.target.parentNode, 'input-filled-parent' );
+				}
+			}
+		})();
+    </script>
+
+</body>
+
+</html>
