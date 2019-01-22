@@ -124,6 +124,12 @@
                 <!-- item over -->
             </div>
             <!-- list over -->
+            <!-- preloader start 没有分页时移除  -->
+            <div class="preloader">
+                <div class="preloader-icon"></div>
+                <p>加载更多</p>
+            </div>
+            <!-- preloader over -->
             <div class="logo-bottom hairline">
                 <img src="img/logo-bottom.png">
             </div>
@@ -160,6 +166,23 @@
                 },
                 probeType: 2,
                 tap: true
+            });
+
+            // 滚动结束监听
+            mainScroll.on('scrollEnd', function() {
+                // 上划加载
+                if (this.y <= (this.maxScrollY + $('.preloader').outerHeight())) {
+                    $('.preloader-icon').addClass('spin');
+                    $('.preloader p').html('正在加载');
+                    alert('开始加载数据');
+                    // 加载完成后, 刷新容器尺寸
+                    setTimeout(function() {
+                        mainScroll.refresh();
+                    }, 200);
+                } else {
+                    $('.preloader-icon').removeClass('spin');
+                    $('.preloader p').html('加载更多');
+                }
             });
 
         }
