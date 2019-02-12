@@ -152,7 +152,7 @@
         // nprogress
         NProgress.start();
 
-        function loaded() {
+        $(window).load(function () {
 
             NProgress.done();
             $('.nprogress-fade').removeClass('nprogress-out');
@@ -185,7 +185,7 @@
                 }
             });
 
-        }
+        });
     </script>
 
 </body>
