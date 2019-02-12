@@ -20,8 +20,7 @@ document.addEventListener('touchmove', function(e) {
 
 var mainScroll;
 
-function loaded() {
-
+$(window).load(function () {
     mainScroll = new IScroll('.main', {
         scrollbars: 'custom',
         fadeScrollbars: true,
@@ -31,8 +30,8 @@ function loaded() {
         tap: true,
         click: true
     });
+})
 
-}
 
 // swiper
 var imageSlide = new Swiper('#image-slide', {

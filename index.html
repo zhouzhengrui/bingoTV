@@ -17,7 +17,18 @@
 </head>
 
 
-<body onload="loaded()">
+<body>
+    <!-- header start -->
+    <header class="topbar hairline">
+        <div class="logo">
+            <img src="img/logo-topbar.png">
+        </div>
+        <div class="language">
+            <a href="#">EN</a>
+        </div>
+    </header>
+
+    <!-- header over -->
     <!-- footer start -->
     <footer class="navbar">
         <div class="item waves-effect active" data-href="index.html">
@@ -37,23 +48,26 @@
             <!-- slideshow start -->
             <div class="swiper-container image-slide" id="image-slide">
                 <div class="swiper-wrapper">
-                    <!-- 最多5组 -->
                     <!-- group start -->
                     <div class="swiper-slide">
-                        <img class="swiper-lazy" data-src="http://placehold.it/375x175">
-                        <div class="swiper-info">
-                            <p>文字信息文字信息文字信息文字信息文字信息文字信息文字信息文字信息</p>
-                        </div>
-                        <div class="swiper-lazy-preloader"></div>
+                        <a href="http://offer.optus.com.au/shop/prepaid/sim-card/30-sim?SID=con:mhome:bfeat:3:nov18:prep:35gb:xmas&_ga=2.264037772.1464832307.1548735226-961340625.1548735226">
+                            <img class="swiper-lazy" data-src="img/slider-1.jpg">
+                            <!-- <div class="swiper-info">
+                                <p>文字信息</p>
+                            </div> -->
+                        </a>
+                        <!-- <div class="swiper-lazy-preloader"></div> -->
                     </div>
                     <!-- group over -->
                     <!-- group start -->
                     <div class="swiper-slide">
-                        <img class="swiper-lazy" data-src="http://placehold.it/375x175">
-                        <div class="swiper-info">
-                            <p>文字信息</p>
-                        </div>
-                        <div class="swiper-lazy-preloader"></div>
+                        <a href="#">
+                            <img class="swiper-lazy" data-src="img/slider-2.jpg">
+                            <!-- <div class="swiper-info">
+                                <p>文字信息</p>
+                            </div> -->
+                        </a>
+                        <!-- <div class="swiper-lazy-preloader"></div> -->
                     </div>
                     <!-- group over -->
                 </div>
@@ -102,7 +116,7 @@
                 <div class="list-video">
                     <!-- 封面标准尺寸372*210px -->
                     <!-- item start -->
-                    <a data-href="video-live.html" class="list-video-item">
+                    <a data-href="video-overdue.html" class="list-video-item">
                         <div class="list-video-cover">
                             <img class="cover-background" src="img/cover-background.png">
                             <div class="cover-image" style="background-image:url('http://placehold.it/372x210')"></div>
@@ -220,6 +234,13 @@
                 </div>
             </div>
             <!-- group over -->
+            <!-- ad start -->
+            <div class="advertisement-index">
+                <a href="https://www.optus.com.au/" target="_blank" class="item">
+                    <img src="http://placehold.it/375x175">
+                </a>
+            </div>
+            <!-- ad over -->
             <!-- group start -->
             <div class="group-index-video">
                 <div class="group-index-video-title hairline">
@@ -503,26 +524,17 @@
     <!-- JavaScript over -->
 
     <script type="text/javascript">
+
         // nprogress
         NProgress.start();
-
-        function loaded() {
-
+        $(window).load(function() {
             NProgress.done();
             $('.nprogress-fade').removeClass('nprogress-out');
+        })
 
-            mainScroll = new IScroll('.main', {
-                scrollbars: 'custom',
-                fadeScrollbars: true,
-                shrinkScrollbars: 'scale',
-                preventDefaultException: {
-                    tagName: /^(INPUT|TEXTAREA|BUTTON|SELECT|IMG)$/
-                },
-                probeType: 2,
-                tap: true
-            });
+        // swiper的DOM是ajax载入时，需在载入完成后执行更新操作
+        // imageSlide.update();
 
-        }
     </script>
 
 </body>

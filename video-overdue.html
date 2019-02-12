@@ -23,9 +23,13 @@
         <div class="scroller">
             <!-- video start -->
             <div class="video-player">
-                <video id="video" controls autoplay webkit-playsinline="true" width="100%" height="100%" poster="img/logo-video.png">
+                <!-- <video id="video" controls autoplay webkit-playsinline="true" width="100%" height="100%" poster="img/logo-video.png">
                     <source type="video/mp4" src="img/test.mp4">
-                </video>
+                </video> -->
+                <div class="video-void">
+                    <img class="logo" src="img/logo.png">
+                    <p>非常抱歉，由于版权限制，仅限澳洲地区用户观看</p>
+                </div>
             </div>
             <!-- video over -->
             <!-- info start -->
@@ -103,15 +107,7 @@
     <!-- JavaScript over -->
 
     <script type="text/javascript">
-        // 点击播放器区域播放视频
-        var video = document.getElementById("video");
-        video.onclick = function() {
-            if (video.paused) {
-                video.play();
-            } else {
-                video.pause();
-            }
-        }
+
     </script>
 
 </body>

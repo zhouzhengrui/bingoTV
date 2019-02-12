@@ -17,7 +17,7 @@
 </head>
 
 
-<body onload="loaded()">
+<body>
     <!-- main start -->
     <div class="main">
         <div class="scroller">
@@ -98,12 +98,12 @@
     <script type="text/javascript">
         // 修复ios下微信7.0键盘收起后Webview底部异常的问题
         if (navigator.userAgent.match(/(iPhone|iPad|iPod|iOS)/i)) {
-            jQuery(document).delegate('input, textarea', 'blur', function() {
+            $(document).delegate('input, textarea', 'blur', function() {
                 setTimeout(function() {
-                    jQuery('html').animate({
+                    $('html').animate({
                         height: '100.1vh'
                     }, 100, function() {
-                        jQuery(this).animate({
+                        $(this).animate({
                             height: '100vh'
                         }, 1);
                     });

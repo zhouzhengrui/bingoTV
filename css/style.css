@@ -176,6 +176,55 @@ textarea {
   background-color: #F5F6F7;
 }
 
+header.topbar {
+  box-sizing: border-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 50px;
+  padding: 8px 15px;
+  background-color: #FFFFFF;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+header.topbar .logo {
+  height: 34px;
+}
+
+header.topbar .logo img {
+  display: block;
+  height: 34px;
+}
+
+header.topbar .language a {
+  box-sizing: border-box;
+  display: block;
+  width: 34px;
+  height: 34px;
+  border: 1px solid #e5e5e5;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 32px;
+  color: #404040;
+  font-size: 14px;
+}
+
+header.topbar ~ .main {
+  margin-top: 50px;
+}
+
 footer.footer {
   -ms-box-sizing: border-box;
   box-sizing: border-box;
@@ -352,7 +401,7 @@ footer.navbar.fix-android ~ .main {
   position: absolute;
   width: 100%;
   border-radius: 3px;
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: rgba(0, 0, 0, 0.2);
 }
 
 .bottom-modal-scroll {
@@ -2271,6 +2320,17 @@ button.swiper-pagination-bullet {
   opacity: .75;
 }
 
+.video-void {
+  padding: 50px 30px;
+  text-align: center;
+  background-color: #f1f1f1;
+}
+
+.video-void .logo {
+  width: 150px;
+  margin-bottom: 15px;
+}
+
 .login-form {
   position: absolute;
   width: 100%;
@@ -2469,6 +2529,11 @@ button.swiper-pagination-bullet {
 
 .user-box ~ .button-group {
   margin: 30px;
+}
+
+.advertisement-index img, .advertisement-index .item {
+  display: block;
+  width: 100%;
 }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 2) {
